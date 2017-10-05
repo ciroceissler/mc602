@@ -22,7 +22,7 @@ end entity;
 architecture rtl of full_adder_bit is
 begin
 
-  s <= a XOR b XOR cin;
+  s    <= a XOR b XOR cin;
   cout <= (a AND b) OR (cin AND a) OR (cin AND b);
 
 end rtl;
